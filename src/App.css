@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+@theme {
+  --color-x-bg: #121212;
+  --color-x-link: #1e90ff;
+  --color-x-link-hover: #e84242;
+}
