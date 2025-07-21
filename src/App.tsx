@@ -10,19 +10,26 @@ import FlagContainer from "./components/FlagContainer";
 import LinkContainer from "./components/LinkContainer";
 import Link from "./components/Link";
 
+import Intro from "./sections/intro";
+
 function App() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center bg-x-bg text-center">
-      <div className="flex max-w-3xl flex-col">
+    <div className="flex h-full w-full flex-col items-center justify-center bg-x-bg text-center text-x-text">
+      <div className="flex h-screen flex-col items-center justify-center md:w-3xl">
         <ProfilePicContainer paths={[general_pp, kirisame_pp]} />
-        <h1>William Andrian / Kirisame</h1>
-        <p>
+        <p className="text-sm font-medium md:text-4xl">
+          William Andrian / Kirisame
+        </p>
+        <p className="text-xs font-light md:text-2xl">
           Data Scientist | Web Developer |{" "}
           <Link href="https://lit.link/kirisameame" children="Music Producer" />
         </p>
-        <FlagContainer paths={[id_flag, us_flag, jp_flag]} />
-        <LinkContainer />
+        <div className="my-3 bg-x-text p-3">
+          <FlagContainer paths={[id_flag, us_flag, jp_flag]} />
+          <LinkContainer />
+        </div>
       </div>
+      <Intro />
     </div>
   );
 }
