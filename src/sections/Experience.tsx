@@ -1,14 +1,14 @@
 import ArrowDown from "../components/svg/ArrowDown";
 
-export default function Intro() {
+export default function Experience() {
   return (
     <div
-      id="intro"
-      className="relative flex h-screen w-full flex-col items-center justify-center bg-x-bocchi"
+      id="experience"
+      className="relative flex h-screen w-full flex-col items-center justify-center bg-x-nijika"
     >
       <div className="flex h-full w-3/4 flex-col items-center md:flex-row md:justify-between">
         <div className="flex">
-          <h1 className="text-4xl font-bold">About me</h1>
+          <h1 className="text-4xl font-bold">Experience</h1>
         </div>
         <div className="flex flex-col">
           <p className="">TBA</p>
@@ -18,7 +18,7 @@ export default function Intro() {
         className="absolute bottom-20 flex h-20 w-sm animate-x-fade-in-down cursor-pointer items-center justify-center md:w-lg"
         onClick={() =>
           document
-            .getElementById("experience")
+            .getElementById("projects")
             ?.scrollIntoView({ behavior: "smooth" })
         }
       >

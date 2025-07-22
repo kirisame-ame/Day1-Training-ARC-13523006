@@ -5,18 +5,28 @@ import jp_flag from "/src/assets/jp.png";
 import general_pp from "/src/assets/general_pp.jpg";
 import kirisame_pp from "/src/assets/image_logo.png";
 
+// Component imports
 import ProfilePicContainer from "./components/ProfilePicContainer";
 import FlagContainer from "./components/FlagContainer";
 import LinkContainer from "./components/LinkContainer";
 import Link from "./components/Link";
 import ArrowDown from "./components/svg/ArrowDown";
+import SideBar from "./components/SideBar";
 
+// Section imports
 import Intro from "./sections/Intro";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center bg-x-bg text-center text-x-text">
-      <div className="flex h-screen flex-col items-center justify-center md:w-3xl">
+      <SideBar />
+      {/* Main content */}
+      <div
+        id="top"
+        className="flex h-screen flex-col items-center justify-center md:w-3xl"
+      >
         <ProfilePicContainer paths={[general_pp, kirisame_pp]} />
         <p className="text-sm font-medium md:text-4xl">
           William Andrian / Kirisame
@@ -41,6 +51,8 @@ function App() {
         </div>
       </div>
       <Intro />
+      <Experience />
+      <Projects />
     </div>
   );
 }

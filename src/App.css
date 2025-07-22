@@ -6,15 +6,20 @@
 }
 
 @theme {
+  /* Color variables */
   --color-x-bg: #fff;
   --color-x-text: #141419;
   --color-x-blue: #2a5dfa;
   --color-x-green: #69c832;
+  --color-x-bocchi: #eeb8c4;
+  --color-x-kita: #d0574e;
+  --color-x-nijika: #e6d47b;
+  --color-x-ryo: #4061a0;
   --color-x-link: #1e90ff;
   --color-x-link-hover: #e84242;
 
+  /* Custom Animations */
   --animate-x-fade-in-down: fade-in-down 3s ease-in-out infinite;
-
   @keyframes fade-in-down {
     0% {
       opacity: 0;
@@ -27,6 +32,16 @@
     100% {
       opacity: 0;
       transform: translateY(20px);
+    }
+  }
+  --animate-x-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
     }
   }
 }
