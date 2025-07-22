@@ -1,6 +1,18 @@
-export default function Flag({ src, alt }: { src: string; alt: string }) {
+import { useTranslation } from "react-i18next";
+
+export default function Flag({
+  src,
+  alt,
+  lang,
+}: {
+  src: string;
+  alt: string;
+  lang: string;
+}) {
+  const { i18n } = useTranslation();
+
   return (
-    <div>
+    <div onClick={() => i18n.changeLanguage(lang)} className="cursor-pointer">
       <img src={src} alt={alt} className="h-10 w-10 object-cover" />
     </div>
   );

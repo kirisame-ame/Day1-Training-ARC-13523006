@@ -1,6 +1,8 @@
 import ArrowDown from "../components/svg/ArrowDown";
-
+import { useTranslation } from "react-i18next";
 export default function Experience() {
+  const { t } = useTranslation();
+
   return (
     <div
       id="experience"
@@ -8,7 +10,7 @@ export default function Experience() {
     >
       <div className="flex h-full w-3/4 flex-col items-center md:flex-row md:justify-between">
         <div className="flex">
-          <h1 className="text-4xl font-bold">Experience</h1>
+          <h1 className="text-4xl font-bold">{t("experience_title")}</h1>
         </div>
         <div className="flex flex-col">
           <p className="">TBA</p>
