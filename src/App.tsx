@@ -19,6 +19,7 @@ import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 
 import { useTranslation } from "react-i18next";
+
 function App() {
   const { t } = useTranslation();
 
