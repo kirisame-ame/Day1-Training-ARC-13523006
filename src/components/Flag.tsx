@@ -12,7 +12,10 @@ export default function Flag({
   const { i18n } = useTranslation();
 
   return (
-    <div onClick={() => i18n.changeLanguage(lang)} className="cursor-pointer">
+    <div
+      onClick={() => i18n.changeLanguage(lang)}
+      className="cursor-pointer hover:scale-120 hover:animate-x-wiggle"
+    >
       <img src={src} alt={alt} className="h-10 w-10 object-cover" />
     </div>
   );
