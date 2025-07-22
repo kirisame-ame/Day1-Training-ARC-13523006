@@ -1,3 +1,3 @@
 export default function SideBar() {
-  return <div className="sticky flex flex-col items-start"></div>;
+  return <div className="fixed flex flex-col items-start"></div>;
 }

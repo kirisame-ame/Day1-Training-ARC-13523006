@@ -9,11 +9,11 @@ export default function Intro() {
       className="relative flex h-screen w-full flex-col items-center justify-center bg-x-bocchi"
     >
       <div className="flex h-full w-3/4 flex-col items-center md:flex-row md:justify-between">
-        <div className="flex">
+        <div className="flex md:w-1/2">
           <h1 className="text-4xl font-bold">{t("about_title")}</h1>
         </div>
-        <div className="flex flex-col">
-          <p className="">TBA</p>
+        <div className="flex flex-col justify-center md:w-1/2">
+          <p className="">{t("about_description")}</p>
         </div>
       </div>
       <div
