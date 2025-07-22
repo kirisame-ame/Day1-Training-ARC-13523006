@@ -9,8 +9,9 @@ import ProfilePicContainer from "./components/ProfilePicContainer";
 import FlagContainer from "./components/FlagContainer";
 import LinkContainer from "./components/LinkContainer";
 import Link from "./components/Link";
+import ArrowDown from "./components/svg/ArrowDown";
 
-import Intro from "./sections/intro";
+import Intro from "./sections/Intro";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         <div className="my-3 bg-x-text p-3">
           <FlagContainer paths={[id_flag, us_flag, jp_flag]} />
           <LinkContainer />
+        </div>
+        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 translate-y-1/2 animate-x-fade-in-down">
+          <ArrowDown />
         </div>
       </div>
       <Intro />

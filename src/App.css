@@ -12,4 +12,21 @@
   --color-x-green: #69c832;
   --color-x-link: #1e90ff;
   --color-x-link-hover: #e84242;
+
+  --animate-x-fade-in-down: fade-in-down 3s ease-in-out infinite;
+
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
 }
