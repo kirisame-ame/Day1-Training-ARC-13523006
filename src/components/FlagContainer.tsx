@@ -1,7 +1,13 @@
 import Flag from "./Flag";
 import { useTranslation } from "react-i18next";
 
-export default function FlagContainer({ paths }: { paths?: string[] }) {
+export default function FlagContainer({
+  paths,
+  languages,
+}: {
+  paths?: string[];
+  languages?: string[];
+}) {
   const { t } = useTranslation();
 
   return (
@@ -13,7 +19,7 @@ export default function FlagContainer({ paths }: { paths?: string[] }) {
             key={index}
             src={path}
             alt={`Flag ${index + 1}`}
-            lang={path.split("/").pop()?.split(".")[0] || ""}
+            lang={languages?.[index] || "en"}
           />
         ))}
       </div>

@@ -40,7 +40,10 @@ function App() {
           />
         </p>
         <div className="my-3 bg-x-text p-3">
-          <FlagContainer paths={[id_flag, en_flag, ja_flag]} />
+          <FlagContainer
+            paths={[id_flag, en_flag, ja_flag]}
+            languages={["id", "en", "ja"]}
+          />
           <LinkContainer />
         </div>
         <div
