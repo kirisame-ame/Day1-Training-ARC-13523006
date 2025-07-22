@@ -29,7 +29,14 @@ function App() {
           <FlagContainer paths={[id_flag, us_flag, jp_flag]} />
           <LinkContainer />
         </div>
-        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 translate-y-1/2 animate-x-fade-in-down">
+        <div
+          className="absolute bottom-20 left-1/2 flex h-20 w-sm -translate-x-1/2 translate-y-1/2 animate-x-fade-in-down cursor-pointer items-center justify-center md:w-lg"
+          onClick={() =>
+            document
+              .getElementById("intro")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <ArrowDown />
         </div>
       </div>
