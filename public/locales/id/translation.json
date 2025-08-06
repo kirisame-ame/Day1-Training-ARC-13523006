@@ -1,3 +1,10 @@
 {
-  "name": "William Andrian / Kirisame"
+  "name": "William Andrian / Kirisame",
+  "interests": "Data Scientist | Web Developer | ",
+  "select_lang": "Pilih Bahasa",
+  "music_producer": "Music Producer",
+  "about_title": "Tentang saya",
+  "about_description": "Mahasiswa tahun ke-3 Teknik Informatika (IF) di Institut Teknologi Bandung, memiliki minat dalam bidang Data Sains (DS), Pembelajaran Mesin (ML) dan Kecerdasan Buatan (AI). Juga memiliki pengalaman dalam pengembangan web dalam bidang Front End, Back End, hingga deployment.",
+  "experience_title": "Pengalaman",
+  "projects_title": "Proyek"
 }

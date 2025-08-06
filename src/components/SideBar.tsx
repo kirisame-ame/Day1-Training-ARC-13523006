@@ -6,7 +6,7 @@ export const scrollToSection = (sectionId: string) => {
 };
 export default function SideBar() {
   return (
-    <div className="bg-x-sidebar fixed top-0 left-0 z-1 flex h-screen w-64 flex-col items-start justify-center pl-4">
+    <div className="bg-x-sidebar fixed top-0 left-0 z-1 flex h-screen flex-col items-start justify-center pl-4">
       <SideBarButton label="Top" onClick={() => scrollToSection("top")} />
       <SideBarButton label="Intro" onClick={() => scrollToSection("intro")} />
       <SideBarButton

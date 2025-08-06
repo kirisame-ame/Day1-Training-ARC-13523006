@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="relative flex h-screen w-full flex-col items-center justify-center bg-x-nijika"
+      className="relative flex h-dvh w-full flex-col items-center justify-center bg-x-nijika"
     >
       <div className="flex h-full w-3/4 flex-col items-center md:flex-row md:justify-between">
         <div className="flex">
