@@ -29,7 +29,7 @@ function App() {
       {/* Main content */}
       <div
         id="top"
-        className="flex h-screen flex-col items-center justify-center md:w-3xl"
+        className="flex h-dvh flex-col items-center justify-center md:w-3xl"
       >
         <ProfilePicContainer paths={[general_pp, kirisame_pp]} />
         <p className="text-sm font-medium md:text-4xl">{t("name")}</p>
