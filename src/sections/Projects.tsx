@@ -17,7 +17,7 @@ export default function Projects() {
         </div>
       </div>
       <div
-        className="absolute bottom-20 flex h-20 w-sm rotate-180 animate-x-fade-in-down cursor-pointer items-center justify-center md:w-lg"
+        className="absolute bottom-20 flex h-20 w-full rotate-180 animate-x-fade-in-down cursor-pointer items-center justify-center md:w-lg"
         onClick={() =>
           document.getElementById("top")?.scrollIntoView({ behavior: "smooth" })
         }
